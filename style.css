@@ -1,0 +1,212 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/*////////////////////////// NAV BAR SECTION ///////////////////////*/
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-row: 50px;
+    grid-template-areas: "about store . gmail image menu signin" ;
+    /*this creates a grid system that can be used to organize a built from scratch navbar */
+
+}
+
+a {
+    text-decoration: none;
+    /* this removes the underline */
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    /*jutsify self and align self allow the element to center itself in its grid spot */
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#signin {
+    grid-area: signin;
+    justify-self: center;
+    align-self: center;
+}
+
+/*////////////////////////// MAIN BODY //////////////////////////*/
+
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  250px 70px 70px 250px;
+    grid-template-areas: 
+    
+    ". logo ." 
+    ". search ." 
+    ". flexbox . "
+    ". offered .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+
+
+}
+
+#search {
+    border: 1px solid rgb(199, 197, 197);
+    grid-area: search;
+    border-radius: 30px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+    width: 160%;
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px rgb(184, 183, 183);
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#google-search-btn {
+    grid-area: google-search-btn;
+    border: none;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    color: rgb(78, 77, 77);
+    padding-right: ;
+}
+
+#google-search-btn:hover {
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 1px 1px 5px rgb(218, 216, 216);
+}
+
+#random-search-btn {
+    grid-area: random-search-btn;
+    border: none;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    color: rgb(78, 77, 77);
+}
+
+#random-search-btn:hover {
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 1px 1px 5px rgb(218, 216, 216);
+}
+
+
+#offered {
+    grid-area: offered;
+    justify-self: center;
+    align-self: start;
+
+}
+
+
+/*////////////////////////// FOOTER //////////////////////////*/
+
+/*#footer {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    background-color: #f2f2f2;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 10px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business hsw . privacy terms settings";
+}
+*/
+
+#footer {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 100px 100px 150px 1fr 150px 100px 100px  ;
+    grid-template-rows: 50px;
+    grid-template-areas: " advertising business hsw  . privacy terms settings";
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+#dutch {
+    color: blue;
+}
